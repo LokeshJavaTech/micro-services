@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## Removing mongodb data files to be commited
+data
