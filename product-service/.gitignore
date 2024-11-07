@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ## Removing mongodb data files to be commited
-data
+volume_mongo

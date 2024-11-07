@@ -1,4 +1,4 @@
-1. Start docker container in the computer system
+1. Start docker desktop engine in the local computer system
 2. Open terminal and change directory to /micro-services/product-service, where docker-compose.yml file exists
 3. Execute command to start mongo service as mentioned in docker-compose.yml file: docker compose up -d
 4. To validate mongo service working in docker or not:
@@ -8,9 +8,9 @@
    4. Execute mongosh command on the mongo container:
           docker exec -it <container-id> mongosh             # execute mongosh on container
           use admin                                          # Switch to admin database
-          db.auth("my_mongo_un", "my_mongo_pwd")             # Authorize with the database
+          db.auth("mongo_un", "mongo_pwd")             # Authorize with the database
               or
-          docker exec -it <container-id> mongosh -u my_mongo_un -p my_mongo_pwd --authenticationDatabase admin
+          docker exec -it <container-id> mongosh -u mongo_un -p mongo_pwd --authenticationDatabase admin
    6. Execute command to select admin database: use admin
    7. Execute command to see all the collections: show collections
    8. Execute command to see all data within system.users collection: db.system.users.find()
