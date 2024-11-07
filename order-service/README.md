@@ -6,7 +6,7 @@
 5. Execute queries:
        select * from flyway_schema_history;
        select * from t_orders;
-6. Start ProductServiceApplication in debug mode in local
+6. Start OrderServiceApplication in debug mode in local
 7. Hit POST url: http://localhost:8081/api/order
    {
    "skuCode": "SamsungGalaxy3_123",
